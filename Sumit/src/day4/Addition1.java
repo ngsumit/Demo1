@@ -7,6 +7,9 @@ public class Addition1 {
 		Scanner in = new Scanner(System.in);
 System.out.println("Enter your name");
 String name = in.next();
+
+System.out.println("Enter your age");
+int age = in.nextInt();
 in.close();
 	}
 
