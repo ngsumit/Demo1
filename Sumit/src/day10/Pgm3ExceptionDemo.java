@@ -11,7 +11,5 @@ public class Pgm3ExceptionDemo {
 			canVote(20);
 			canVote(10);
 		}
-	
-
-}
+	}
 
