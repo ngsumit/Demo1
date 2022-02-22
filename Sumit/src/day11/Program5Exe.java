@@ -1,8 +1,7 @@
 package day11;
 
 public class Program5Exe {
-	class Main {
-		public static void main (String[] args) {
+	public static void main (String[] args) {
 	         try
 	       {
 	             System.out.println(4/0);
