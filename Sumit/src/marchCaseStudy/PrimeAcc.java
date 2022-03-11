@@ -15,6 +15,11 @@ public abstract class PrimeAcc extends ShopAcc
 		this.isPrime = isPrime;
 	}
 
+	public PrimeAcc(int accNo, String accNm, float charges) {
+		super(accNo, accNm, charges);
+	
+	}
+
 	public boolean isPrime() {
 		return isPrime;
 	}
@@ -23,7 +28,4 @@ public abstract class PrimeAcc extends ShopAcc
 		this.isPrime = isPrime;
 	}
 	
-	
-	
-	
-}
+	}
