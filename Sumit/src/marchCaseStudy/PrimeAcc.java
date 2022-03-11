@@ -3,7 +3,7 @@ package marchCaseStudy;
 public abstract class PrimeAcc extends ShopAcc
 {
 	private boolean isPrime;
-
+    private static final float deliveryCharges = 0;
 	PrimeAcc()
 	{
 		
