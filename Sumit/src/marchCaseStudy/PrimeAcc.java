@@ -3,7 +3,7 @@ package marchCaseStudy;
 public abstract class PrimeAcc extends ShopAcc
 {
 	private boolean isPrime;
-    private static final float deliveryCharges = 0;
+    private final static float deliveryCharges =100;
 	PrimeAcc()
 	{
 		
@@ -12,31 +12,34 @@ public abstract class PrimeAcc extends ShopAcc
 		super();
 		this.isPrime = isPrime;
 	}
-	public PrimeAcc(int accNo, String accNm, float charges, boolean isPrime) {
+	public PrimeAcc(int accNo, String accNm, float charges, boolean isPrime) 
+	{
 		super(accNo, accNm, charges);
-		// TODO Auto-generated constructor stub
-		
-		
-			
-		}
-	public boolean isPrime() {
+		this.isPrime = isPrime;
+	}
+	public boolean getIsPrime() 
+	{
 		return isPrime;
 	}
-	public void setPrime(boolean isPrime) {
-		this.isPrime = isPrime;
+	
+	public float getDeliveryCharges()
+	{
+		return deliveryCharges;
 	}
 	public static float getDeliverycharges() {
 		return deliveryCharges;
 	}
 	
-	@overridden
-	public void BookProduct (float delieverycharges ) {
-		return();
+	@Override
+	public void bookProduct(float deliverycharges) 
+	{
+		super.bookProduct(deliverycharges);
 	}
 	
+	@Override
 	public String toString()
 	{
-		
+		return "["+isPrime+","+deliveryCharges+"]";
 	}
 	}
 

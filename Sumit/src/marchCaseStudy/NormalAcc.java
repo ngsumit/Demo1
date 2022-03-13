@@ -1,14 +1,24 @@
 package marchCaseStudy;
 
-public abstract class NormalAcc extends ShopAcc {
+public abstract class NormalAcc extends ShopAcc 
+{
 
-	private final float deliveryCharges = 0;
+	private final float deliveryCharges;
     
-	NormalAcc()
+	public NormalAcc(int accNo, String accNm, float charges, float deliveryCharges) 
 	{
-		
+		super(accNo, accNm,charges);
+		this.deliveryCharges = deliveryCharges;
 	}
-	public NormalAcc(int AccNo, int accNm, float charges, float deliveryCharges) {
-		
-}
+	
+	public float getDeliveryCharges() 
+	{
+		return deliveryCharges;
+	}
+	
+	@Override
+	public void bookProduct(float bp)
+	{
+		super.bookProduct(bp);
+	}
 }

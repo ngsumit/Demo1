@@ -34,7 +34,8 @@ public abstract class ShopAcc
 		this.accNm = accNm;
 	}
 
-	public float getCharges() {
+	public float getCharges() 
+	{
 		return charges;
 	}
 
@@ -43,10 +44,16 @@ public abstract class ShopAcc
 		this.charges = charges;
 	}
 	
-	abstract public void bookProduct(float charges);
+	public void bookProduct(float charges)
+	{
+		this.charges = charges;
+	}
 	
 	
-	abstract public void items(float charges);
+	public void items(float charges)
+	{
+		this.charges = charges;
+	}
 	
 	
 	@Override
