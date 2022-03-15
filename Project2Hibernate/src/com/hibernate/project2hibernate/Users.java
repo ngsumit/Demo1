@@ -8,7 +8,15 @@ import javax.persistence.Table;
  @Entity
  @Table(name="users")
 public class Users {
-	 @Id
+	 public Users(int users_id, String users_fname, String users_lname, String users_email) {
+		super();
+		this.users_id = users_id;
+		this.users_fname = users_fname;
+		this.users_lname = users_lname;
+		this.users_email = users_email;
+	}
+
+	@Id
 	 @Column(name="users-id")
 	 int users_id;
 	 
