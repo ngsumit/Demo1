@@ -7,7 +7,8 @@ public class ThreadDemo7 extends Thread {
 		while(n < 5000) {
 			System.out.println("Count below 5000");
 		}
-		else
+		
+		{
 			System.out.println("Count ");
 			}
 		
