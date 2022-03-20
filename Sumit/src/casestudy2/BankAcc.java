@@ -36,7 +36,7 @@ public abstract class BankAcc {
 	}
 	
 	
-	public void items(float accBal)
+	public void deposite(float accBal)
 	{
 		this.accBal = accBal;
 	}
