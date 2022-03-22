@@ -1,8 +1,9 @@
 package com.hibenate;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.Session;
 
-import com.hibernate.project2.User;
+import com.hibernate.project2.Users;
 
 public class App {
 
@@ -10,14 +11,14 @@ public class App {
 		// TODO Auto-generated method stub
 		SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
-                .addAnnotatedClass(User.class)
+                .addAnnotatedClass(Users.class)
                 .buildSessionFactory();
 
 Session session = factory.getCurrentSession();
 
 try {
 // Create object of entity class type
-com.hibernate.project2.User user = new User( 3, "Mahima","Shah","sshah@tns.org");
+Users user = new Users( 3, "Mahima","Shah","sshah@tns.org");
 // Start transaction
 session.beginTransaction();
 // Perform operation

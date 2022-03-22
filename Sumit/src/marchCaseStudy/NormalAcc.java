@@ -1,7 +1,6 @@
 package marchCaseStudy;
 
-public abstract class NormalAcc extends ShopAcc 
-{
+public abstract class NormalAcc extends ShopAcc {
 
 	private final float deliveryCharges;
     

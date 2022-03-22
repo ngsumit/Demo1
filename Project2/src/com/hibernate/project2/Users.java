@@ -4,12 +4,13 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 @Entity
-@Table(name="user")
-public class User{
+@Table(name="users")
+public class Users{
 	
 
-	public User(int users_id, String users_fname, String users_lname, String users_email) {
+	public Users(int users_id, String users_fname, String users_lname, String users_email) {
 		this.users_id = users_id;
 		this.users_fname = users_fname;
 		this.users_lname = users_lname;
@@ -60,6 +61,4 @@ public class User{
 	public void setUsers_email(String users_email) {
 		this.users_email = users_email;
 	}
-	
-
-}
+	}
