@@ -15,18 +15,19 @@ public class JDBCDemo {
 		//String query = "create table student(ID int primary key,SName varchar(20), SMarks int)";//step 6
 		//String query1 = "insert into student values(5,'Mansi',20)";
 		//String query = "select * from student";
-		ResultSet rs = st.executeQuery("SELECT ID,SName, SMarks FROM student");
+		ResultSet rs = st.executeQuery("SELECT ID,SName, SMarks,SAge FROM student");
 		while(rs.next())
 	      {
 	        System.out.println(rs.getString(1));  //First Column
 	        System.out.println(rs.getString(2));  //Second Column
-	        System.out.println(rs.getString(3));  //Third Column
+	        System.out.println(rs.getString(3)); //Third Column
+	        System.out.println(rs.getString(4));
 	      }
 		//st.executeUpdate(query1);//steps 7
 		//System.out.println("Student Table created successfully");
 		
 		System.out.println("Row inserted successfully");
-		
+	
 	st.close();
 	con.close();
 	}

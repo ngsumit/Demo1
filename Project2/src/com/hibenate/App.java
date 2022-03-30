@@ -30,7 +30,8 @@ session.getTransaction().commit();
 System.out.println("Row Added");
 
 
-} finally {
+} 
+    finally {
 session.close();
 factory.close();
 }

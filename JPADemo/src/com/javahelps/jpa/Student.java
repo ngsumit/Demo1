@@ -15,10 +15,10 @@ public class Student{
 	@Column(name="student_id", unique = true)
 	private int id;
 	
-	@Column(name="student_name", unique = false)
+	@Column(name="student_name", nullable = false)
 	private String name;
 	
-	@Column(name="student_age", unique = false)
+	@Column(name="student_age", nullable = false)
 	private int age;
 
 	public int getId() {

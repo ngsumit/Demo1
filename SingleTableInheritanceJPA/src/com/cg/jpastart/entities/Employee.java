@@ -54,4 +54,4 @@ public class Employee implements Serializable {
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
-
+}
