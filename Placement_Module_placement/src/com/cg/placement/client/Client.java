@@ -12,36 +12,36 @@ public class Client {
 		Placement placement = new Placement();
 		
 		IPlacementService service = new PlacementServiceImpl();
-		/*
+		
 		// Create
-		student.setId(102);
-		student.setName("Akshay");
-		student.setCollege("Pokhara University");
-		student.setDate(49);
-		student.setQualification("BE");
-		student.setYear(2030);
-		service.addPlacement();
-		*/
+		placement.setId(102);
+		placement.setName("Akshay");
+		placement.setCollege("Pokhara University");
+		placement.setDate(49);
+		placement.setQualification("BE");
+		placement.setYear(2030);
+		placement.addPlacement();
+		
 		// Retrieve
-		/*
-		placement	= service.searchCollegeByPlacementId(100);
-		System.out.println("ID is:"+student.getId());
-		System.out.println("College is:"+student.getCollege());
+		
+		placement	= service.searchPlacement(100);
+		System.out.println("ID is:"+placement.getId());
+		System.out.println("College is:"+placement.getCollege());
 		
 		
-		*/
+		
 		  
 		//
-		/*
+		
 		// Update
-		placement	= service.searchCollegeByPlacementId(100);
-		student.setCollege("Rive University");
+		placement	= service.searchPlacement(100);
+		placement.setCollege("Rive University");
 		service.updatePlacement(placement);
 		System.out.println("Update is successful");
-		*/
+	
 		
 		
-		placement	= service.searchCollegeByPlacementId(101);
+		placement	= service.searchPlacement(101);
 		service.deletePlacement(placement);
 		System.out.println("Delete is successful");
 		}

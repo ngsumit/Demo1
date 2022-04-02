@@ -30,20 +30,12 @@ public class PlacementRepositoryImpl implements IPlacementRepository
 	}
 
 	@Override
-	public Placement searchCollegeByPlacementId(int id)
+	public Placement searchPlacement(int id)
 	{
-		Placement placement = entityManager.find(Placement.class, id);
+		Placement placement = entityManager.find(Placement.class,id);
 		return placement;
 	}
 
-	@Override
-	public Placement deletePlacement(Placement placement) 
-	{
-		entityManager.remove(placement);
-		return placement;
-	}
-	
-	
 	@Override
 	public void beginTransaction() 
 	{
@@ -57,19 +49,9 @@ public class PlacementRepositoryImpl implements IPlacementRepository
 	}
 
 	@Override
-	public Placement addQualification(Placement placement) {
+	public void cancelPlacement(int id) {
 		// TODO Auto-generated method stub
-		entityManager.persist(placement);
-		return placement;
+		
 	}
-
-	@Override
-	public void deleteplacement(int id) {
-		// TODO Auto-generated method stub
-		Placement placement = entityManager.find(Placement.class, id);
-		entityManager.remove(placement);
-
-	}
-
 }
 

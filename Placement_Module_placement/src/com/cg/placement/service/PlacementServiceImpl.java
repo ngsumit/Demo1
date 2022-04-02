@@ -37,31 +37,27 @@ public class PlacementServiceImpl implements IPlacementService
 	}
 
 	@Override
-	public Placement searchCollegeByPlacementId(int id) {
+	public Placement searchPlacement(int id) {
 		// TODO Auto-generated method stub
-		Placement placement = dao.searchCollegeByPlacementId(id);
+		Placement placement = dao.searchPlacement(id);
 		return placement;
 
 	}
 
 	@Override
-	public Placement deletePlacement(Placement placement) {
+	public Boolean cancelPlacement(int id) {
 		// TODO Auto-generated method stub
 		dao.beginTransaction();
-		dao.deletePlacement(placement);
+		dao.cancelPlacement(id);
 		dao.commitTrasaction();
-		return placement;
+		return false;
 
 	}
 
+	
 	@Override
-	public Placement addQualification(Placement placement) {
+	public void deletePlacement(Placement placement) {
 		// TODO Auto-generated method stub
-		dao.beginTransaction();
-		dao.addQualification(placement);
-		dao.commitTrasaction();
-		return placement;
-
+		
 	}
-
 }

@@ -54,5 +54,13 @@ public class Placement {
 	public void setYear(int year) {
 		this.year = year;
 	}
+	public void addPlacement() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setDate(int i) {
+		// TODO Auto-generated method stub
+		
+	}
 
 	}
