@@ -31,7 +31,7 @@ public class PlacementServiceImpl implements IPlacementService
 	public Placement updatePlacement(Placement placement) {
 		// TODO Auto-generated method stub
 		dao.beginTransaction();
-		dao.addPlacement(placement);
+		dao.updatePlacement(placement);
 		dao.commitTrasaction();
 	     return placement;
 	}
@@ -55,9 +55,7 @@ public class PlacementServiceImpl implements IPlacementService
 	}
 
 	
-	@Override
-	public void deletePlacement(Placement placement) {
-		// TODO Auto-generated method stub
+	
 		
 	}
-}
+

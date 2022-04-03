@@ -11,5 +11,6 @@ public interface IPlacementRepository {
     public abstract void beginTransaction();
 	public abstract void commitTrasaction();
 	public void cancelPlacement(int id);
+	
 	}
 

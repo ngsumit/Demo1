@@ -14,7 +14,7 @@ public class Placement {
 	private long id;
 	private String name;
 	private String college;
-	private LocalDate date ;
+	private int date ;
 	private String qualification;
 	private int year;
 	
@@ -36,10 +36,10 @@ public class Placement {
 	public void setCollege(String college) {
 		this.college = college;
 	}
-	public LocalDate getDate() {
+	public int getDate() {
 		return date;
 	}
-	public void setDate(LocalDate date) {
+	public void setDate(int date) {
 		this.date = date;
 	}
 	public String getQualification() {
@@ -54,13 +54,6 @@ public class Placement {
 	public void setYear(int year) {
 		this.year = year;
 	}
-	public void addPlacement() {
-		// TODO Auto-generated method stub
-		
-	}
-	public void setDate(int i) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 	}

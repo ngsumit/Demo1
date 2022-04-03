@@ -20,7 +20,7 @@ public class Client {
 		placement.setDate(49);
 		placement.setQualification("BE");
 		placement.setYear(2030);
-		placement.addPlacement();
+		service.addPlacement(placement);
 		
 		// Retrieve
 		
@@ -42,8 +42,8 @@ public class Client {
 		
 		
 		placement	= service.searchPlacement(101);
-		service.deletePlacement(placement);
-		System.out.println("Delete is successful");
+		service.cancelPlacement(15);
+		System.out.println("Cancel is successful");
 		}
 
 

@@ -8,5 +8,5 @@ public interface IPlacementService {
 	public Placement updatePlacement(Placement placement);
 	public Placement searchPlacement(int id);
 	public Boolean cancelPlacement(int id);
-	public void deletePlacement(Placement placement);
+	
 	}
