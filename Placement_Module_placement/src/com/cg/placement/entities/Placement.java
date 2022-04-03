@@ -1,6 +1,5 @@
 package com.cg.placement.entities;
 
-import java.time.LocalDate;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -11,17 +10,17 @@ import javax.persistence.Table;
 public class Placement {
 	
 	@Id
-	private long id;
+	private int id;
 	private String name;
 	private String college;
 	private int date ;
 	private String qualification;
 	private int year;
 	
-	public long getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getName() {

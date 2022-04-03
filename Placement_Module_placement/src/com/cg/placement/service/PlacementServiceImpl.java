@@ -48,14 +48,10 @@ public class PlacementServiceImpl implements IPlacementService
 	public Boolean cancelPlacement(int id) {
 		// TODO Auto-generated method stub
 		dao.beginTransaction();
-		dao.cancelPlacement(id);
+		((PlacementServiceImpl) dao).cancelPlacement(id);
 		dao.commitTrasaction();
 		return false;
 
 	}
-
-	
-	
-		
-	}
+}
 

@@ -48,12 +48,12 @@ public class PlacementRepositoryImpl implements IPlacementRepository
 		entityManager.getTransaction().commit();
 	}
 
-	@Override
-	public void cancelPlacement(int id) {
-		// TODO Auto-generated method stub
+	
+
+	
 		
 	}
 
-	}
+	
 
 
