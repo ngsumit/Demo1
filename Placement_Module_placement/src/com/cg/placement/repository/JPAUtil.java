@@ -12,7 +12,7 @@ package com.cg.placement.repository;
 		
 		static
 		{
-			factory = Persistence.createEntityManagerFactory("JPA-PU");
+			factory = Persistence.createEntityManagerFactory("JavaHelps");
 		}
 		
 		public static EntityManager getEntityManager()

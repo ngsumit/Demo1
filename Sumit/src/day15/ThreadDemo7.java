@@ -9,8 +9,9 @@ public class ThreadDemo7 extends Thread {
 		}
 		
 		{
-			System.out.println("Count ");
+			System.out.println("Count");
 			}
+	}
 		
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

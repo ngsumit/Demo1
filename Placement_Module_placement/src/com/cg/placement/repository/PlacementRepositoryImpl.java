@@ -48,11 +48,7 @@ public class PlacementRepositoryImpl implements IPlacementRepository
 		entityManager.getTransaction().commit();
 	}
 
-	
-
-	
-		
-	}
+}
 
 	
 

@@ -1,18 +1,26 @@
 package com.cg.placement.entities;
 
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="placement")
+
 public class Placement {
 	
 	@Id
 	private int id;
+	
+	@ManyToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="college")
+	private College college;
+	
 	private String name;
-	private String college;
 	private int date ;
 	private String qualification;
 	private int year;
@@ -29,10 +37,10 @@ public class Placement {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getCollege() {
+	public College getCollege() {
 		return college;
 	}
-	public void setCollege(String college) {
+	public void setCollege(College college) {
 		this.college = college;
 	}
 	public int getDate() {
@@ -53,6 +61,8 @@ public class Placement {
 	public void setYear(int year) {
 		this.year = year;
 	}
-	
 
 	}
+	
+
+	

@@ -1,5 +1,6 @@
 package day11;
 import java.io.*;
+import java.util.Scanner;
 
 public class Program16Exe {
 	static void func(int a,int b) throws ArithmeticException, ArrayIndexOutOfBoundsException{
